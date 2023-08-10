@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Camp Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
+    
+    <header>
+        <div class="logo">
+            <img src="https://img1.wsimg.com/isteam/ip/aafcc2c5-6bbd-4011-9efa-4bba2cbb1331/logo/c56e6a3b-bab6-4e89-a918-e2418f16e71d.jpg/:/rs=h:80,cg:true,m/qt=q:95" alt="Camp Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Eli</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="connect.html">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            <h1>Connect With Us</h1>
+            <a href="#activities" class="btn">Explore Activities</a>
+        </section>
+
+        <section id="activities">
+            <h2>Activities</h2>
+            <ul>
+                <li>Hiking</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p class="about-description">Cultural, educational and sports camps, programs and trips for children, adults and families.</p>
+        </section>
+
+        <!-- Programs Page -->
+        <section id="programs">
+            <h2>Our Programs</h2>
+            <p>Explore our diverse range of programs for different age groups and interests.</p>
+        </section>
+
+        <!-- Gallery Page -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Take a look at the memorable moments and experiences from our camp.</p>
+        </section>
+
+        <!-- Connect Page -->
+        <section id="connect">
+            <h2>Connect with Us</h2>
+            <p>If you have any questions or feedback, we'd love to hear from you!</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Eli</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="connect.html">Connect</a></li>
+            </ul>
+        </nav>
+
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Stay updated with the latest news and events.</p>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="social-links">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/theEliCamps" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-white-f.png" alt="Facebook" width="32" height="32">
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/elicamps/" target="_blank" rel="noopener noreferrer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" width="32" height="32">
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/channel/UC8qGDaByfndSqiyqUhvu4Hw" target="_blank" rel="noopener noreferrer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube" width="45" height="32">
+            </a>
+        </div>
+
+        <p class="footer-copyright">&copy; 2023 My Camp. All rights reserved.</p>
+    </footer>
+    <script>
+        window.addEventListener("load", function () {
+            var loadingScreen = document.getElementById("loading-screen");
+            loadingScreen.style.opacity = "0"; 
+            setTimeout(function () {
+                loadingScreen.style.display = "none";
+            }, 500);
+        });
+    </script>
+    
+</body>
+</html>
